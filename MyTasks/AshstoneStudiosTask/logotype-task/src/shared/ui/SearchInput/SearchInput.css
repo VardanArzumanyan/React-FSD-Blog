@@ -1,0 +1,14 @@
+.search-input {
+  padding: 0.5rem 0.6rem;
+  border: none;
+  border-radius: 6px;
+  min-width: 200px;
+}
+
+@media (max-width: 600px) {
+  .search-input {
+    min-width: 100px;
+    padding: 0.4rem 0.4rem;
+    font-size: 0.7rem;
+  }
+}

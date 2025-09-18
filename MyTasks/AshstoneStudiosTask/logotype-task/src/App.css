@@ -26,13 +26,22 @@
 .hamburger {
   width: 36px;
   height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  border: 1px solid #ddd;
+  border: none;
+  background: none;
   cursor: pointer;
-  background: white;
+}
+
+.search-icon,
+.more-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.down-arrow {
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
 }
 
 @media (max-width: 600px) {

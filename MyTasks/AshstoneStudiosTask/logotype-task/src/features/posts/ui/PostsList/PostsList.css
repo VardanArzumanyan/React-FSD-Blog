@@ -1,21 +1,9 @@
-.posts-wrap {
-  margin-top: 3rem;
-}
-
 .posts-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
   gap: 1rem;
-}
-
-
-.search-input {
-  padding: 0.5rem 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  min-width: 200px;
 }
 
 .status {

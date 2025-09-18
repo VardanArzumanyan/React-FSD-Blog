@@ -1,15 +1,18 @@
+// src/features/posts/ui/PostsList/PostsList.tsx
 import React, { useEffect, useState } from "react";
 import { fetchPosts, type PostDTO } from "../../model/postsService";
 import PostCard from "../PostCard/PostCard";
 import PostModal from "../../../../entities/post/ui/PostModal/PostModal";
+import { useSearch } from "../../../../shared/context/search/SearchContext";
 import "./PostsList.css";
 
 const PostsList: React.FC = () => {
   const [posts, setPosts] = useState<PostDTO[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
-  const [query, setQuery] = useState<string>("");
   const [selected, setSelected] = useState<PostDTO | null>(null);
+
+  const { query } = useSearch();
 
   useEffect(() => {
     let mounted = true;
@@ -41,16 +44,6 @@ const PostsList: React.FC = () => {
 
   return (
     <div className="container posts-wrap">
-      <div className="posts-header">
-        <input
-          className="search-input"
-          type="search"
-          placeholder="Search posts..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
-      </div>
-
       {loading && <div className="status">Loading posts…</div>}
       {error && <div className="status status--error">Error: {error}</div>}
 
