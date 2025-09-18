@@ -1,0 +1,57 @@
+.posts-wrap {
+  margin-top: 3rem;
+}
+
+.posts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+
+.search-input {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  min-width: 200px;
+}
+
+.status {
+  padding: 0.6rem 0;
+}
+.status--error {
+  color: red;
+}
+
+/* grid using flex with px gap between columns */
+.posts-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--content-gap));
+}
+
+/* each item uses padding-left as column gap (px) */
+.post-item {
+  padding-left: var(--content-gap);
+  margin-bottom: 2.6rem;
+  box-sizing: border-box;
+  width: calc((100% / 3) - (var(--content-gap) * (2 / 3)));
+}
+
+/* responsive */
+@media (max-width: 980px) {
+  .post-item {
+    width: calc((100% / 2) - (var(--content-gap) * (1 / 2)));
+  }
+}
+@media (max-width: 600px) {
+  .post-item {
+    width: 100%;
+    padding-left: 0;
+  }
+  .posts-grid {
+    margin-left: 0;
+  }
+}

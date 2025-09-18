@@ -1,0 +1,27 @@
+:root {
+  --max-width: 1100px;
+  --content-gap: 24px;
+  --base-font: 16px;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  font-size: 16px;
+  color: #111;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
