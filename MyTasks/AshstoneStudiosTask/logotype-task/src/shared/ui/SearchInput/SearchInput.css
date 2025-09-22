@@ -7,8 +7,8 @@
 
 @media (max-width: 600px) {
   .search-input {
-    min-width: 100px;
-    padding: 0.4rem 0.4rem;
-    font-size: 0.7rem;
+    min-width: 50px;
+    padding: 0.5rem 0.4rem;
+    font-size: 0.4rem;
   }
 }

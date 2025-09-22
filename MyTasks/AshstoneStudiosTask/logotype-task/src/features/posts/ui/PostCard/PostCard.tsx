@@ -26,7 +26,11 @@ const PostCard: React.FC<Props> = ({ post, onClick }) => {
       />
       <div className="post-body">
         <div className="post-meta">{post.tags}</div>
-        <h3 className="post-title">{post.title}</h3>
+        <div className="post-title">{post.title}</div>
+        <div className="post-author-date-views">
+          <span>{post.autor}</span> • <span>{post.date}</span> •{" "}
+          <span>{post.views} views</span>
+        </div>
         <p className="post-excerpt">{post.text}</p>
       </div>
     </article>

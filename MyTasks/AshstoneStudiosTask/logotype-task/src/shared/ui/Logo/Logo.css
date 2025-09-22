@@ -1,6 +1,35 @@
-.site-logo {
-  font-family: "Montserrat", "Rubik", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.06rem;
-  font-size: 1.5rem;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logotype {
+  font-family: "Arial Black", "Helvetica", sans-serif;
+  font-size: clamp(2rem, 3vw, 4rem);
+  font-weight: 900;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  position: relative;
+  display: inline-block;
+
+  text-shadow: 1px 0px 0 #fff, 2px 0px 0 #fff, 3px 0px 0 #fff, 4px 0px 0 #fff,
+    5px 0px 0 #fff, 6px 0px 0 #fff, 7px 0px 0 #fff, 8px 0px 0 #fff,
+    0px 1px 0 #fff, 0px 2px 0 #fff, 0px 3px 0 #fff, 0px 4px 0 #fff,
+    0px 5px 0 #fff, 0px 6px 0 #fff, 0px 7px 0 #fff, 0px 8px 0 #fff,
+    1px 1px 0 #fff, 2px 2px 0 #fff, 3px 3px 0 #fff, 4px 4px 0 #fff,
+    5px 5px 0 #fff, 6px 6px 0 #fff, 7px 7px 0 #fff, 8px 8px 0 #fff,
+    9px 9px 0 #000, 10px 10px 0 #000;
+}
+
+@media (max-width: 768px) {
+  .logotype {
+    font-size: clamp(2rem, 3vw, 4rem);
+    letter-spacing: 0.1rem;
+    text-shadow: 1px 0px 0 #fff, 2px 0px 0 #fff, 3px 0px 0 #fff, 4px 0px 0 #fff,
+      0px 1px 0 #fff, 0px 2px 0 #fff, 0px 3px 0 #fff, 0px 4px 0 #fff,
+      1px 1px 0 #fff, 2px 2px 0 #fff, 3px 3px 0 #fff, 4px 4px 0 #fff,
+      5px 5px 0 #000;
+  }
 }

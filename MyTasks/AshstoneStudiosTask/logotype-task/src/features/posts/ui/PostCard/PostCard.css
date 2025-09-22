@@ -11,6 +11,10 @@
   border-radius: 4px;
 }
 .post-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
   padding: 0.6rem 0;
 }
 .post-meta {
@@ -20,12 +24,26 @@
   margin-top: 0.5rem;
 }
 .post-title {
-  font-size: 1.05rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  margin: 0.35rem 0;
 }
-.post-excerpt {
+
+.post-author-date-views{
   font-size: 0.9rem;
+}
+
+.post-author-date-views span:nth-child(1) {
+  color: #000000;
+  font-weight: 600;
+}
+
+.post-author-date-views span {
+  color: #666;
+  font-weight: 400;
+}
+
+.post-excerpt {
+  font-size: 1rem;
   color: #666;
   margin: 0;
 }

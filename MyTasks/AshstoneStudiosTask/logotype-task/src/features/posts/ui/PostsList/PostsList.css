@@ -13,22 +13,19 @@
   color: red;
 }
 
-/* grid using flex with px gap between columns */
 .posts-grid {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--content-gap));
 }
 
-/* each item uses padding-left as column gap (px) */
 .post-item {
   padding-left: var(--content-gap);
-  margin-bottom: 2.6rem;
+  margin-bottom: 3rem;
   box-sizing: border-box;
   width: calc((100% / 3) - (var(--content-gap) * (2 / 3)));
 }
 
-/* responsive */
 @media (max-width: 980px) {
   .post-item {
     width: calc((100% / 2) - (var(--content-gap) * (1 / 2)));

@@ -1,4 +1,3 @@
-// src/App.tsx
 import React, { useState, useRef, useEffect } from "react";
 import Header from "./shared/ui/Header/Header";
 import MobileMenu from "./shared/ui/MobileMenu/MobileMenu";

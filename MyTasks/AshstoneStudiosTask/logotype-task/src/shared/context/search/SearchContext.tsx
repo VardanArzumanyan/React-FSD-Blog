@@ -1,5 +1,10 @@
-// src/shared/context/SearchContext.tsx
-import React, { createContext, useContext, useState, type ReactNode } from "react";
+/* eslint-disable react-refresh/only-export-components */
+import React, {
+  createContext,
+  useContext,
+  useState,
+  type ReactNode,
+} from "react";
 
 interface SearchContextType {
   query: string;
@@ -20,7 +25,6 @@ export const SearchProvider: React.FC<{ children: ReactNode }> = ({
   );
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const useSearch = (): SearchContextType => {
   const ctx = useContext(SearchContext);
   if (!ctx) {

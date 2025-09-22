@@ -1,4 +1,3 @@
-// src/features/posts/ui/PostsList/PostsList.tsx
 import React, { useEffect, useState } from "react";
 import { fetchPosts, type PostDTO } from "../../model/postsService";
 import PostCard from "../PostCard/PostCard";

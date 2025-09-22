@@ -1,5 +1,3 @@
-/* shared app-level styles */
-
 .header-top {
   background: white;
   border-bottom: 1px solid #eee;
@@ -9,14 +7,12 @@
   display: none !important;
 }
 
-/* Modal backdrop (fallback, modal has own CSS) */
 .modal-backdrop {
   position: fixed;
   inset: 0;
   z-index: 1200;
 }
 
-/* mobile header */
 .mobile-header {
   display: none;
   align-items: center;
@@ -42,6 +38,11 @@
   width: 12px;
   height: 12px;
   margin-left: 4px;
+}
+
+.right-arrow {
+  width: 12px;
+  height: 12px;
 }
 
 @media (max-width: 600px) {
