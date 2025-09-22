@@ -6,8 +6,8 @@
 .post-image {
   width: 100%;
   height: 180px;
-  object-fit: cover;
   display: block;
+  object-fit: cover;
   border-radius: 4px;
 }
 .post-body {
@@ -28,7 +28,7 @@
   font-weight: 700;
 }
 
-.post-author-date-views{
+.post-author-date-views {
   font-size: 0.9rem;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .post-excerpt {
+  margin: 0;
   font-size: 1rem;
   color: #666;
-  margin: 0;
 }

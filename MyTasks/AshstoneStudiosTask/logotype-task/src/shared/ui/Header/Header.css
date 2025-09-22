@@ -4,9 +4,9 @@
 }
 
 .header-hero {
-  padding: 1.25rem 1rem;
   display: flex;
   align-items: center;
+  padding: 1.25rem 1rem;
 }
 
 .header-container {

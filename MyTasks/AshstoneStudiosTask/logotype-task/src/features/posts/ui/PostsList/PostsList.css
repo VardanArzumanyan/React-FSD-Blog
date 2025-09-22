@@ -20,10 +20,10 @@
 }
 
 .post-item {
+  width: calc((100% / 3) - (var(--content-gap) * (2 / 3)));
   padding-left: var(--content-gap);
   margin-bottom: 3rem;
   box-sizing: border-box;
-  width: calc((100% / 3) - (var(--content-gap) * (2 / 3)));
 }
 
 @media (max-width: 980px) {

@@ -174,7 +174,7 @@ const Header: React.FC = () => {
         onMouseDown={(e) => e.preventDefault()}
       >
         <div className="container menu-inner">
-          <div className={"menu-item"}>
+          <div className="menu-item">
             <div className="menu-item-with-submenu">
               Demos
               <img src={downArrow} alt="Down arrow" className="down-arrow" />
@@ -252,21 +252,21 @@ const Header: React.FC = () => {
             </div>
           </div>
 
-          <div className={"menu-item"}>
+          <div className="menu-item">
             <div className="menu-item-with-submenu">
               Features
               <img src={downArrow} alt="Down arrow" className="down-arrow" />
             </div>
           </div>
 
-          <div className={"menu-item "}>
+          <div className="menu-item ">
             <div className="menu-item-with-submenu">
               Categories
               <img src={downArrow} alt="Down arrow" className="down-arrow" />
             </div>
           </div>
 
-          <div className={"menu-item "}>
+          <div className="menu-item ">
             <div className="menu-item-with-submenu">
               Shop
               <img src={downArrow} alt="Down arrow" className="down-arrow" />

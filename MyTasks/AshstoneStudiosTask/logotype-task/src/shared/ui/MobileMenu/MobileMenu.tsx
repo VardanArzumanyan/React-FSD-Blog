@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import useLockBodyScroll from "../../lib/useLockBodyScroll";
 import downArrow from "../../icons/down-arrow.png";
-
-import "./MobileMenu.css";
 import Logo from "../Logo/Logo";
+import "./MobileMenu.css";
 
 type Props = {
   open: boolean;

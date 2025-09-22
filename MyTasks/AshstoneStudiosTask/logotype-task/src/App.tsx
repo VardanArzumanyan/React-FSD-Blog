@@ -4,7 +4,7 @@ import MobileMenu from "./shared/ui/MobileMenu/MobileMenu";
 import PostsList from "./features/posts/ui/PostsList/PostsList";
 import Logo from "./shared/ui/Logo/Logo";
 import SearchInput from "./shared/ui/SearchInput/SearchInput";
-import { SearchProvider } from "./shared/context/search/SearchContext";
+import { SearchProvider } from "./shared/context/search/SearchProvider";
 import searchIcon from "./shared/icons/search.png";
 import moreIcon from "./shared/icons/more.png";
 
