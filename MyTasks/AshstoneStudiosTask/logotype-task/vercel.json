@@ -1,9 +1,12 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
+  "functions": {
+    "app/api/hello.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
   "rewrites": [
     {
-      "source": "/((?!api/.*).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
