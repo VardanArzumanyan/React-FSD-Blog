@@ -173,7 +173,7 @@ const Header: React.FC = () => {
         }}
         onMouseDown={(e) => e.preventDefault()}
       >
-        <div className="container menu-inner">
+        <div className=" menu-inner">
           <div className="menu-item">
             <div className="menu-item-with-submenu">
               Demos
